@@ -5,5 +5,7 @@
 **Funcionalidades a serem desenvolvidas:**
 
 > Poder alimentar o script com uma lista de objetos a serem rastreados.
-> Enviar um email com a última atualização dos mesmos.
-> Automatizar a tarefa para executar o programa de hora em hora.
+> 
+> Enviar um email com a última atualização dos objetos.
+> 
+> Automatizar a tarefa para executar o programa em um intervalo de tempo.
