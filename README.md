@@ -5,8 +5,8 @@
 **Utilização:**
 
 > python rastreamento_correios.py CódigoDoObjeto
-
-> > Exemplo: python rastreamento_correios.py AA123456789BR
+>
+>> Exemplo: python rastreamento_correios.py AA123456789BR
 
 ---
 
