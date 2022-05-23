@@ -4,22 +4,34 @@ from sys import argv
 
 
 def rastreamento_correios(cod_objeto):
-    # Obter JSON [API Correios]
     req = requests.get(
         url="https://proxyapp.correios.com.br/v1/sro-rastro/"+cod_objeto)
-    data = req.json()
+    resposta = req.json()
 
-    # Parseando o JSON
+    with open("search_output.json", "w", encoding="utf-8") as f:
+        json.dump(resposta, f, ensure_ascii=False, indent=4)
+
+    output = open("search_output.json")
+    data = json.load(output)
+
     objeto = data["objetos"][0]["codObjeto"]
-    ultimo_status = data["objetos"][0]["eventos"][0]["descricao"]
-    ultima_atualizacao = data["objetos"][0]["eventos"][0]["dtHrCriado"]
+    tipo_postal = data["objetos"][0]["tipoPostal"]["categoria"]
 
-    # Output
-    print("-"*50)
     print(f"Código do objeto: {objeto}")
-    print(f"Status: {ultimo_status}")
-    print(f"Data: {ultima_atualizacao[:10]}")
-    print(f"Hora: {ultima_atualizacao[11:]}")
+    print(f"Tipo postal: {tipo_postal}")
+
+    eventos = data["objetos"][0]["eventos"][0]
+    i = 0
+    for evento in eventos:
+        status_evento = data["objetos"][0]["eventos"][i]["descricao"]
+        data_evento = data["objetos"][0]["eventos"][i]["dtHrCriado"][:10]
+        hora_evento = data["objetos"][0]["eventos"][i]["dtHrCriado"][11:16]
+
+        print(f"")
+        print(f"Status: {status_evento}")
+        print(f"Data: {data_evento}")
+        print(f"Hora: {hora_evento}")
+        i += 1
 
     return 0
 

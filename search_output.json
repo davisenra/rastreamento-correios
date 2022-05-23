@@ -1,0 +1,135 @@
+{
+    "objetos": [
+        {
+            "codObjeto": "QI949637438BR",
+            "dtPrevista": "2022-03-29T20:58:00",
+            "eventos": [
+                {
+                    "codigo": "BDE",
+                    "descricao": "Objeto entregue ao destinatário",
+                    "dtHrCriado": "2022-03-22T10:57:20",
+                    "tipo": "01",
+                    "unidade": {
+                        "endereco": {
+                            "cidade": "VILA VELHA",
+                            "uf": "ES"
+                        },
+                        "tipo": "Unidade de Distribuição"
+                    },
+                    "urlIcone": "/public-resources/img/smile.png"
+                },
+                {
+                    "codigo": "OEC",
+                    "descricao": "Objeto saiu para entrega ao destinatário",
+                    "dtHrCriado": "2022-03-22T09:35:14",
+                    "tipo": "01",
+                    "unidade": {
+                        "endereco": {
+                            "bairro": "SAO TORQUATO",
+                            "cep": "29114971",
+                            "cidade": "VILA VELHA",
+                            "logradouro": "AVENIDA GRACA ARANHA",
+                            "numero": "87",
+                            "uf": "ES"
+                        },
+                        "tipo": "Unidade de Distribuição"
+                    },
+                    "urlIcone": "/public-resources/img/pre-atendimento-cor.png"
+                },
+                {
+                    "codigo": "RO",
+                    "descricao": "Objeto em trânsito - por favor aguarde",
+                    "dtHrCriado": "2022-03-21T14:02:06",
+                    "tipo": "01",
+                    "unidade": {
+                        "endereco": {
+                            "cidade": "SERRA",
+                            "uf": "ES"
+                        },
+                        "tipo": "Unidade de Tratamento"
+                    },
+                    "unidadeDestino": {
+                        "endereco": {
+                            "cidade": "VILA VELHA",
+                            "uf": "ES"
+                        },
+                        "tipo": "Unidade de Distribuição"
+                    },
+                    "urlIcone": "/public-resources/img/caminhao-cor.png"
+                },
+                {
+                    "codigo": "DO",
+                    "descricao": "Objeto em trânsito - por favor aguarde",
+                    "dtHrCriado": "2022-03-19T00:47:18",
+                    "tipo": "01",
+                    "unidade": {
+                        "endereco": {
+                            "cidade": "BELO HORIZONTE",
+                            "uf": "MG"
+                        },
+                        "tipo": "Unidade de Tratamento"
+                    },
+                    "unidadeDestino": {
+                        "endereco": {
+                            "cidade": "SERRA",
+                            "uf": "ES"
+                        },
+                        "tipo": "Unidade de Tratamento"
+                    },
+                    "urlIcone": "/public-resources/img/caminhao-cor.png"
+                },
+                {
+                    "codigo": "DO",
+                    "descricao": "Objeto em trânsito - por favor aguarde",
+                    "dtHrCriado": "2022-03-16T15:18:38",
+                    "tipo": "01",
+                    "unidade": {
+                        "endereco": {
+                            "cidade": "LAGOA DA PRATA",
+                            "uf": "MG"
+                        },
+                        "tipo": "Agência dos Correios"
+                    },
+                    "unidadeDestino": {
+                        "endereco": {
+                            "cidade": "BELO HORIZONTE",
+                            "uf": "MG"
+                        },
+                        "tipo": "Unidade de Tratamento"
+                    },
+                    "urlIcone": "/public-resources/img/caminhao-cor.png"
+                },
+                {
+                    "codigo": "PO",
+                    "descricao": "Objeto postado",
+                    "dtHrCriado": "2022-03-16T15:14:01",
+                    "tipo": "01",
+                    "unidade": {
+                        "endereco": {
+                            "cidade": "LAGOA DA PRATA",
+                            "uf": "MG"
+                        },
+                        "tipo": "Agência dos Correios"
+                    },
+                    "urlIcone": "/public-resources/img/agencia-cor.png"
+                }
+            ],
+            "modalidade": "F",
+            "tipoPostal": {
+                "categoria": "ENCOMENDA PAC",
+                "descricao": "ETIQUETA LOGICA PAC QI",
+                "sigla": "QI"
+            },
+            "habilitaAutoDeclaracao": false,
+            "permiteEncargoImportacao": false,
+            "habilitaPercorridaCarteiro": false,
+            "bloqueioObjeto": false,
+            "possuiLocker": false,
+            "habilitaLocker": false,
+            "habilitaCrowdshipping": false
+        }
+    ],
+    "quantidade": 1,
+    "resultado": "Todos os Eventos",
+    "versao": "2.1.3"
+}
