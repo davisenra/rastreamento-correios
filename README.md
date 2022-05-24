@@ -8,12 +8,3 @@
 
 Exemplo: `python rastreamento_correios.py AA123456789BR`
 
----
-
-**Funcionalidades a serem desenvolvidas:**
-
-> Alimentar o script com uma lista de objetos a serem rastreados.
-
-> Enviar um email com a última atualização dos objetos.
-
-> Automatizar a tarefa.
