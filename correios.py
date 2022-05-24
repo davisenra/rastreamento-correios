@@ -1,15 +1,10 @@
-import requests
 import json
 from sys import argv
+from api_request import api_request
 
 
-def rastreamento_correios(cod_objeto):
-    req = requests.get(
-        url="https://proxyapp.correios.com.br/v1/sro-rastro/"+cod_objeto)
-    resposta = req.json()
-
-    with open("search_output.json", "w", encoding="utf-8") as f:
-        json.dump(resposta, f, ensure_ascii=False, indent=4)
+def rastreamento(cod_objeto):
+    api_request(cod_objeto)
 
     output = open("search_output.json")
     data = json.load(output)
@@ -37,4 +32,4 @@ def rastreamento_correios(cod_objeto):
 
 
 if __name__ == "__main__":
-    rastreamento_correios(argv[1])
+    rastreamento(argv[1])
