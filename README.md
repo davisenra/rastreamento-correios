@@ -1,4 +1,4 @@
-**Um script simples desenvolvido em Python para buscar o último status de um objeto utilizando a API dos Correios.**
+**Script para rastrear um objeto utilizando a API dos Correios.**
 
 ---
 
