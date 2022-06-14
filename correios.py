@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import requests
 import json
 from sys import argv
@@ -24,11 +26,11 @@ def api_request(object_code: str) -> Dict:
 def track_object(json_response: Dict):
     data = json_response
     tracked_object = data["objetos"][0]["codObjeto"]
-    tipo_postal = data["objetos"][0]["tipoPostal"]["categoria"]
+    ojbect_type = data["objetos"][0]["tipoPostal"]["categoria"]
     event = data["objetos"][0]["eventos"][0]
 
     print(f"Código do objeto: {tracked_object}")
-    print(f"Tipo postal: {tipo_postal}")
+    print(f"Tipo postal: {ojbect_type}")
 
     i = 0
     for each_event in event:
