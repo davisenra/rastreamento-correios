@@ -34,18 +34,21 @@ def track_object(json_response: Dict):
 
     i = 0
     for each_event in event:
-        event_status = data["objetos"][0]["eventos"][i]["descricao"]
-        event_date = data["objetos"][0]["eventos"][i]["dtHrCriado"][:10]
-        event_hour = data["objetos"][0]["eventos"][i]["dtHrCriado"][11:16]
-        event_city = data["objetos"][0]["eventos"][i]["unidade"]["endereco"]["cidade"]
-        event_state = data["objetos"][0]["eventos"][i]["unidade"]["endereco"]["uf"]
+        try:
+            event_status = data["objetos"][0]["eventos"][i]["descricao"]
+            event_date = data["objetos"][0]["eventos"][i]["dtHrCriado"][:10]
+            event_hour = data["objetos"][0]["eventos"][i]["dtHrCriado"][11:16]
+            event_city = data["objetos"][0]["eventos"][i]["unidade"]["endereco"]["cidade"]
+            event_state = data["objetos"][0]["eventos"][i]["unidade"]["endereco"]["uf"]
 
-        print(f"")
-        print(f"Status: {event_status}")
-        print(f"Data: {event_date}")
-        print(f"Hora: {event_hour}")
-        print(f"Cidade/Estado: {event_city}/{event_state}")
-        i += 1
+            print(f"")
+            print(f"Status: {event_status}")
+            print(f"Data: {event_date}")
+            print(f"Hora: {event_hour}")
+            print(f"Cidade/Estado: {event_city.rstrip()}/{event_state}")
+            i += 1
+        except:
+            break
 
     return 0
 
